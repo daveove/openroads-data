@@ -12,6 +12,8 @@ For the OpenRoads project we constructed a custom ID of 10 or 11 characters.
 
 The region code consists of 1 or 2 digits.
 
+In the original shapefiles, the provinces and municipalities contained some sort of ID. This was used as the basis to construct the OpenRoads ID. The region and barangay IDs were assigned in a more random fashion.
+
 For example:
 
 | id | type | name |
