@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: devseed.02651a85
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 123.2117
+  - 10.1257
+  - 8
+description: OpenRoads - baselayer with the municipal boundaries for the Philippines
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 16
+minzoom: 8
+name: OR - Municipal boundaries
+source: "mapbox:///devseed.c415ff89"
+styles: 
+  - style.mss
+template: ''
