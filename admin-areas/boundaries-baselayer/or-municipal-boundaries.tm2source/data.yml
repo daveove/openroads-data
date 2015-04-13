@@ -1,43 +1,21 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: devseed.c415ff89
-  rev: s-5a926650
+  mapid: openroads.6e355424
+  rev: s-349bdb68
   saveCenter: true
 attribution: ''
 center: 
-  - 123.783
-  - 6.9319
-  - 8
-description: OpenRoads - municipal boundaries and layers. Excluding maritime borders.
+  - 121.4868
+  - 11.7383
+  - 6
+description: OpenRoads - municipality boundaries for the Philippines
 Layer: 
-  - id: mun-boundaries-no-maritime
-    Datasource: 
-      file: /home/olaf/projects/openroads-data/admin-areas/boundaries-baselayer/mun-boundaries-no-maritime.shp
-      type: shape
-    description: Municipal boundaries PHI - no maritime
-    fields: 
-      ENGTYPE_2: String
-      ID_0: Number
-      ID_1: Number
-      ID_2: Number
-      ISO: String
-      NAME_0: String
-      NAME_1: String
-      NAME_2: String
-      NL_NAME_2: String
-      TYPE_2: String
-      VARNAME_2: String
-      x_coord: Number
-      y_coord: Number
-    properties: 
-      "buffer-size": 8
-    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: mun-labels
     Datasource: 
-      file: /home/olaf/projects/openroads-data/admin-areas/boundaries-baselayer/mun-labels.shp
+      file: /home/olaf/projects/openroads-data/admin-areas/boundaries-baselayer/shapefiles/mun-labels.shp
       type: shape
-    description: Municipal labels - PHI
+    description: Centroids Philippine municipalities
     fields: 
       ENGTYPE_2: String
       ID_0: Number
@@ -55,6 +33,28 @@ Layer:
     properties: 
       "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
-maxzoom: 16
-minzoom: 8
-name: OR - Municipal boundaries
+  - id: mun-boundaries-no-maritime
+    Datasource: 
+      file: /home/olaf/projects/openroads-data/admin-areas/boundaries-baselayer/shapefiles/mun-boundaries-no-maritime.shp
+      type: shape
+    description: Boundaries Philippine municipalities w/out maritime border
+    fields: 
+      ENGTYPE_2: String
+      ID_0: Number
+      ID_1: Number
+      ID_2: Number
+      ISO: String
+      NAME_0: String
+      NAME_1: String
+      NAME_2: String
+      NL_NAME_2: String
+      TYPE_2: String
+      VARNAME_2: String
+      x_coord: Number
+      y_coord: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 6
+name: OR - municipality boundaries

@@ -4,39 +4,19 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">123.2117,10.1257,8</Parameter>
-  <Parameter name="description"><![CDATA[OpenRoads - baselayer with the municipal boundaries for the Philippines]]></Parameter>
+  <Parameter name="center">123.6803,10.1739,12</Parameter>
+  <Parameter name="description"><![CDATA[OpenRoads - Municipal boundaries for the Philippines]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
-  <Parameter name="maxzoom">16</Parameter>
-  <Parameter name="minzoom">8</Parameter>
-  <Parameter name="name"><![CDATA[OR - Municipal boundaries]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///devseed.c415ff89]]></Parameter>
+  <Parameter name="maxzoom">12</Parameter>
+  <Parameter name="minzoom">6</Parameter>
+  <Parameter name="name"><![CDATA[OR - municipal boundaries]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///openroads.6e355424]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
   <Font face-name="Open Sans Regular"/>
   <Font face-name="Arial Unicode MS Regular"/>
 </FontSet>
-<Style name="mun-boundaries-no-maritime" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="0.5" />
-  </Rule>
-</Style>
-<Layer name="mun-boundaries-no-maritime"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>mun-boundaries-no-maritime</StyleName>  </Layer>
-
 <Style name="mun-labels" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -57,5 +37,25 @@
 <Layer name="mun-labels"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>mun-labels</StyleName>  </Layer>
+
+<Style name="mun-boundaries-no-maritime" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="0.5" />
+  </Rule>
+</Style>
+<Layer name="mun-boundaries-no-maritime"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>mun-boundaries-no-maritime</StyleName>  </Layer>
 
 </Map>
