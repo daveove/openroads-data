@@ -1,0 +1,26 @@
+_prefs: 
+  mapid: openroads.cc286209
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 122.7228
+  - 11.8243
+  - 8
+description: OpenRoads - A baselayer for the Philippine road network
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 16
+minzoom: 6
+name: OR - Roads baselayer
+source: "mapbox:///openroads.10f6c195"
+styles: 
+  - style.mss
+  - roads.mss
+template: ''
