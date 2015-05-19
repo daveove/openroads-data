@@ -27,6 +27,3 @@ OpenRoads contains data about the basic Philippine road network, but also data a
 ## Administrative areas
 [notes about what info is stored about the admin areas]
 final format = geojson
-
-## General notes
-- Administrative areas are identified using the [Philippine Standard Geographic Code](http://www.nscb.gov.ph/activestats/psgc/).
