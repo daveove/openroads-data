@@ -4,13 +4,13 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">122.7228,11.8243,8</Parameter>
+  <Parameter name="center">119.3665,10.2176,8</Parameter>
   <Parameter name="description"><![CDATA[OpenRoads - A baselayer for the Philippine road network]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">16</Parameter>
   <Parameter name="minzoom">6</Parameter>
   <Parameter name="name"><![CDATA[OR - Roads baselayer]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///openroads.10f6c195]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///openroads.10f6c195,openroads.e0246306]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -25,74 +25,6 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'national')</Filter>
     <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -159,96 +91,129 @@
     <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([len] &gt; 2500) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
     <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
     <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
     <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
     <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -380,6 +345,225 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'municipal')</Filter>
     <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -477,196 +661,6 @@
     <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'barangay')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="14" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="11" fontset-name="fontset-1" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer size="10" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([len] &gt; 2500) and ([or_class] = 'municipal')</Filter>
@@ -808,64 +802,19 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'municipal')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'municipal')</Filter>
     <TextSymbolizer size="12" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'municipal')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'municipal')</Filter>
     <TextSymbolizer size="11" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'municipal')</Filter>
-    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="12" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="11" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
-    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
-    <TextSymbolizer size="12" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
-    <TextSymbolizer size="11" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'municipal')</Filter>
     <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -911,6 +860,51 @@
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal')</Filter>
+    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="12" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="11" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'barangay')</Filter>
+    <TextSymbolizer avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" size="8" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="12" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
+    <TextSymbolizer size="11" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal')</Filter>
     <TextSymbolizer size="9" avoid-edges="true" text-transform="uppercase" character-spacing="0.25" placement="line" fontset-name="fontset-0" fill="#444444" halo-fill="#ffffff" halo-radius="1.5" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -1200,17 +1194,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#eeeeee" stroke-linejoin="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#eeeeee" stroke-linejoin="round" />
   </Rule>
@@ -1292,6 +1275,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#eeeeee" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#eeeeee" stroke-linejoin="round" />
   </Rule>
@@ -1369,6 +1363,11 @@
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'municipal')</Filter>
     <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
   </Rule>
   <Rule>
@@ -1377,11 +1376,6 @@
     <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'municipal')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#eeeeee" stroke-linejoin="round" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'municipal') and ([or_rdclass] = 'municipal')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" />
@@ -1556,72 +1550,37 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="6" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="6" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffeeaa" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
@@ -1660,6 +1619,41 @@
     <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffeeaa" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="6" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffeeaa" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffeeaa" />
@@ -1719,72 +1713,37 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="7" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="7" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffcc88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
   <Rule>
@@ -1820,12 +1779,209 @@
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#ffcc88" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#ffcc88" />
   </Rule>
 </Style>
 <Style name="roads-case" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'private') and ([or_rdclass] = 'private')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'private') and ([or_rdclass] = 'private')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'private') and ([or_rdclass] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
   </Rule>
@@ -1977,168 +2133,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'private')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'private')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'municipal')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="3" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private') and ([or_class] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'private')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#d1cac2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'municipal') and ([or_class] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
   </Rule>
@@ -2302,142 +2296,25 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="3" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
-    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e19966" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'barangay') and ([or_class] = 'barangay')</Filter>
     <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
   </Rule>
   <Rule>
@@ -2699,96 +2576,166 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e19966" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="6.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'barangay')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-linejoin="round" stroke="#bab3ad" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="8" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="8" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
-    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
@@ -2839,44 +2786,50 @@
     <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
+    <LineSymbolizer stroke-width="8" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial')</Filter>
     <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
@@ -2918,6 +2871,47 @@
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([or_rdclass] = 'provincial') and ([or_class] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="2.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-linejoin="round" stroke="#e1b380" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([or_class] = 'provincial') and ([or_rdclass] = 'national')</Filter>
     <LineSymbolizer stroke-width="0.2" stroke-linejoin="round" stroke="#e1b380" />
   </Rule>
   <Rule>
@@ -3067,5 +3061,9 @@
     <StyleName>roads-case</StyleName>
     <StyleName>roads-fill</StyleName>
     <StyleName>roads</StyleName>  </Layer>
+
+<Layer name="Palawan_Roads"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
 
 </Map>

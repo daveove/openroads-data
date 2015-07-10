@@ -16,11 +16,10 @@
       line-join:round;
       line-color: mix(@motorway, #800, 75);
       #road { line-cap: round; }
-      #tunnel { line-dasharray:3,2; }
-      [zoom>=6]  { line-width:0.4; }
-      [zoom>=7]  { line-width:0.6; }
+      [zoom>=6] { line-width:0.4; }
+      [zoom>=7] { line-width:0.6; }
       [zoom>=8] { line-width:1.5; }
-      [zoom>=10]  { line-width:3; }
+      [zoom>=10] { line-width:3; }
       [zoom>=13] { line-width:3.5;  }
       [zoom>=14] { line-width:5; }
       [zoom>=15] { line-width:7; }
@@ -30,7 +29,6 @@
       line-join:round;
       line-color: mix(@main, #800, 75);
       #road { line-cap: round; }
-      #tunnel { line-dasharray:3,2; }
       [zoom>=6] { line-width:0.2; }
       [zoom>=7] { line-width:0.4; }
       [zoom>=8] { line-width:1.5; }
@@ -43,7 +41,6 @@
     [or_rdclass='municipal'][zoom>=12],[or_class='municipal'][zoom>=12],[or_rdclass='barangay'][zoom>=12],[or_class='barangay'][zoom>=12] {
       line-join:round;
       #road { line-cap: round; }
-      #tunnel { line-dasharray:3,2; }
       line-color: @land * 0.8;
       [zoom>=12] { line-width:0.5; }
       [zoom>=14] { line-width:1; }
@@ -53,7 +50,6 @@
     [or_rdclass='private'][zoom>=15],[or_class='private'][zoom>=15] {
       line-join:round;
       #road { line-cap: round; }
-      #tunnel { line-dasharray:3,2; }
       line-color: @land * 0.9;
       [zoom>=15] { line-width:1; }
       [zoom>=16] { line-width:4; }
@@ -66,7 +62,6 @@
       line-join:round;
       #road, #bridge { line-cap:round; }
       line-color:@motorway;
-      #tunnel { line-color:lighten(@motorway,4); }
       [zoom>=8] { line-width:0.5; }
       [zoom>=10] { line-width:1; }
       [zoom>=13] { line-width:2; }
@@ -78,7 +73,6 @@
       line-join:round;
       #road, #bridge { line-cap: round; }
       line-color:@main;
-      #tunnel { line-color:lighten(@main,4); }
       [zoom>=8] { line-width:0.5; }
       [zoom>=10] { line-width:1; }
       [zoom>=13] { line-width:1.5; }
@@ -88,13 +82,13 @@
     }
     [or_rdclass='municipal'][zoom>=15],[or_class='municipal'][zoom>=15] {
       line-join:round;
-      #road, #bridge { line-cap: round; }
+      #road { line-cap: round; }
       [zoom>=15] { line-width:2.5; line-color:#fff; }
       [zoom>=16] { line-width:4; }
     }
     [or_rdclass='barangay'][zoom>=15],[or_class='barangay'][zoom>=15] {
       line-join:round;
-      #road, #bridge { line-cap: round; }
+      #road { line-cap: round; }
       [zoom>=15] { line-width:2.5; line-color:#eee; }
       [zoom>=16] { line-width:4; }
     }
