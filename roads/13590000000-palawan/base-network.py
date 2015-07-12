@@ -18,7 +18,7 @@ notes:    Provided by Karlo Pornadoro
 The following fields are used:    
 
 Field           Used for              Reason
-NAME            or_rdclass=*          Main classification of road
+OR_RDCLASS      or_rdclass=*          Main classification of road
                 highway=*
 '''
 
@@ -29,17 +29,17 @@ def filterTags(attrs):
 
   # Map the road type to the OSM highway classification
   # Malvar 1 uses 'DESCR' to indicate road type, Malvar 2 uses 'FOLDER'
-  if attrs['NAME'] and attrs['NAME'] == "National Highway":
+  if attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "National Highway":
     tags.update({'or_rdclass':'national', 'highway':'primary'})
-  elif attrs['NAME'] and attrs['NAME'] == "Provincial Road":
+  elif attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "Provincial Road":
     tags.update({'or_rdclass':'provincial', 'highway':'secondary'})
-  elif attrs['NAME'] and attrs['NAME'] == "City Road":
+  elif attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "City Road":
     tags.update({'or_rdclass':'municipal', 'highway':'tertiary'})
-  elif attrs['NAME'] and attrs['NAME'] == "Municipal Road":
+  elif attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "Municipal Road":
     tags.update({'or_rdclass':'municipal', 'highway':'tertiary'})
-  elif attrs['NAME'] and attrs['NAME'] == "Barangay Road":
+  elif attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "Barangay Road":
     tags.update({'or_rdclass':'barangay', 'highway':'unclassified'})
-  elif attrs['NAME'] and attrs['NAME'] == "Private Road":
+  elif attrs['OR_RDCLASS'] and attrs['OR_RDCLASS'] == "Private Road":
     tags.update({'or_rdclass':'private', 'highway':'service'})
   else:
     tags.update({'highway':'road'})
