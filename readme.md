@@ -19,14 +19,17 @@ Other notes:
 - the data should be imported using negative id's. OGR2OSM takes care of this by default.
 
 ### Basic road network
-[add info about main attributes]
+
+- name
+- or_rdclass
+- or_condition
+- surface
 
 ### Project roads
 OpenRoads contains data about the basic Philippine road network, but also data about project roads such as FMR and TRIP. These are imported as ways into the OR database and then manually converted to relations.
 
 ## Administrative areas
-[notes about what info is stored about the admin areas]
-final format = geojson
+The administrative areas are stored in its own repository: [OpenRoads Boundaries](https://github.com/opengovt/openroads-boundaries).
 
 ## Generating the baselayer
 Until the automatic generation of the baselayer is implemented, we are manually rendering it using Mapbox Studio.
