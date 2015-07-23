@@ -26,7 +26,7 @@ The following fields are used:
 
 Field           Used for              Reason
 NAME            name=NAME             Name of the road
-FOLDER          or_class=*            Main classification of road (Malvar 2)
+FOLDER          or_rdclass=*            Main classification of road (Malvar 2)
                 highway=*
 '''
 
@@ -41,7 +41,7 @@ def filterTags(attrs):
 
   # Map the road type to the OSM highway classification
   if attrs['FOLDER'] and attrs['FOLDER'] == "National Road":
-    tags.update({'or_class':'national', 'highway':'motorway'})
+    tags.update({'or_rdclass':'national', 'highway':'motorway'})
   else:
     tags.update({'highway':'road'})
 
