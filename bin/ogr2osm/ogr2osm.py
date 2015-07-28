@@ -135,6 +135,9 @@ parser.add_option("--idfile", dest="idfile", type=str, default=None,
 parser.add_option("--saveid", dest="saveid", type=str, default=None,
                     help="Save last ID after execution to a file.")
 
+parser.add_option("--create-changeset", dest="createChangeset", action="store_true",
+                    help="Make a proper OSM changeset of the XML output. Works on batch create.")
+
 # Positive IDs can cause big problems if used inappropriately so hide the help for this
 parser.add_option("--positive-id", dest="positiveID", action="store_true",
                     help=optparse.SUPPRESS_HELP)
@@ -582,7 +585,9 @@ def output():
     # Open up the output file with the system default buffering
     with open(options.outputFile, 'w', -1) as f:
         
-        if options.noUploadFalse:
+        if options.changeset:
+            f.write('<?xml version="1.0"?>\n<osmChange version="0.3" generator="uvmogr2osm">\n<create>\n')
+        elif options.noUploadFalse:
             f.write('<?xml version="1.0"?>\n<osm version="0.6" generator="uvmogr2osm">\n')
         else:
             f.write('<?xml version="1.0"?>\n<osm version="0.6" upload="false" generator="uvmogr2osm">\n')
@@ -651,8 +656,10 @@ def output():
                     
             f.write(etree.tostring(xmlobject))
             f.write('\n')
-            
-        f.write('</osm>')
+        if options.changeset:
+            f.write('</create>\n<modify/>\n<delete if-unused="true"/>\n</osmChange>')
+        else:
+            f.write('</osm>')
 
 
 # Main flow

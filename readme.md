@@ -8,7 +8,7 @@ For the purpose of OpenRoads, we use a slightly adapted version that allows to s
 This repository contains mostly the org2osm translation files, organized by administrative area. These can be used as follows:
 
 ``` bash
-python bin/ogr2osm/ogr2osm.py roads/041017000-malvar/source/MALVAR_ROAD_FINAL1.shp -t roads/041017000-malvar/network.py --add-user="openroads"
+python bin/ogr2osm/ogr2osm.py roads/041017000-malvar/source/MALVAR_ROAD_FINAL1.shp -t roads/041017000-malvar/network.py --add-user="openroads" --create-changeset
 ```
 
 This command applies the translation file (`network.py`) to the Malvar shapefile provided by the municipality.
