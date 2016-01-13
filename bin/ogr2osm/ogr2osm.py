@@ -585,7 +585,7 @@ def output():
     # Open up the output file with the system default buffering
     with open(options.outputFile, 'w', -1) as f:
         
-        if options.changeset:
+        if options.createChangeset:
             f.write('<?xml version="1.0"?>\n<osmChange version="0.3" generator="uvmogr2osm">\n<create>\n')
         elif options.noUploadFalse:
             f.write('<?xml version="1.0"?>\n<osm version="0.6" generator="uvmogr2osm">\n')
@@ -656,7 +656,7 @@ def output():
                     
             f.write(etree.tostring(xmlobject))
             f.write('\n')
-        if options.changeset:
+        if options.createChangeset:
             f.write('</create>\n<modify/>\n<delete if-unused="true"/>\n</osmChange>')
         else:
             f.write('</osm>')
