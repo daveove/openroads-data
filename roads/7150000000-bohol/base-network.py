@@ -26,7 +26,7 @@ The following fields are used:
 
 Field           Used for              Reason
 ROAD_NAME       name=ROAD_NAME        Name of the road
-RD_CLASS        or_rdclass=*          Main classification of road
+RD_CLASS        or_responsibility=*          Main classification of road
                 highway=*
 RD_TYPE         surface=RD_TYPE       Surface of the road
 RD_COND         or_condition          Condition of the road
@@ -43,15 +43,15 @@ def filterTags(attrs):
 
   # Map the road type to the OSM highway classification
   if attrs['RD_CLASS'] and attrs['RD_CLASS'].lower() == "national":
-    tags.update({'or_rdclass':'national', 'highway':'primary'})
+    tags.update({'or_responsibility':'national', 'highway':'primary'})
   elif attrs['RD_CLASS'] and attrs['RD_CLASS'].lower() == "provincial":
-    tags.update({'or_rdclass':'provincial', 'highway':'secondary'})
+    tags.update({'or_responsibility':'provincial', 'highway':'secondary'})
   elif attrs['RD_CLASS'] and attrs['RD_CLASS'].lower() == "municipal":
-    tags.update({'or_rdclass':'municipal', 'highway':'tertiary'})
+    tags.update({'or_responsibility':'municipal', 'highway':'tertiary'})
   elif attrs['RD_CLASS'] and attrs['RD_CLASS'].lower() == "barangay":
-    tags.update({'or_rdclass':'barangay', 'highway':'unclassified'})
+    tags.update({'or_responsibility':'barangay', 'highway':'unclassified'})
   elif attrs['RD_CLASS'] and attrs['RD_CLASS'].lower() == "private":
-    tags.update({'or_rdclass':'private', 'highway':'service'})
+    tags.update({'or_responsibility':'private', 'highway':'service'})
   else:
     tags.update({'highway':'road'})
 
