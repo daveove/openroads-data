@@ -1,5 +1,5 @@
 # OpenRoads Data
-This repository is part of the [OpenRoads](https://github.com/developmentseed/openroads) project. It contains scripts to process the raw source data into something that can be used by the project.
+This repository is part of the [OpenRoads](https://github.com/developmentseed/openroads) project. It contains scripts to process the raw source data into something that can be used by the project. It also contains the schema for the database that powers the [OpenRoads API](https://github.com/opengovt/openroads-api)
 
 ## Road network data
 Road data is imported into OpenRoads in OSM XML format. To transform the source data into this format, this project uses [OGR2OSM](https://github.com/pnorman/ogr2osm). This python library uses translation files to map attributes to OSM tags.  
@@ -42,3 +42,6 @@ Upload the data source to Mapbox.
 2. Add the new data source as an extra layer to the style.  
 Open the style and go to Layers -> Change source. Append the Mapbox ID.
 3. Upload the style back to Mapbox
+
+## Openroads Database
+This repo also contains the Openroads Database Schema. [Documentation](https://github.com/opengovt/openroads-data/blob/master/db/README.md#openroads-db)
