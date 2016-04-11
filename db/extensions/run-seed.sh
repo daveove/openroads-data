@@ -9,4 +9,6 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
   COPY current_way_nodes FROM '/init/current_way_nodes.csv' DELIMITER ',' CSV HEADER;
   COPY current_way_tags FROM '/init/current_way_tags.csv' DELIMITER ',' CSV HEADER;
   COPY admin_boundaries FROM '/init/admin_boundaries.csv' DELIMITER ',' CSV HEADER;
+  COPY admin_stats FROM '/init/admin_stats.csv' DELIMITER ',' CSV HEADER;
+  COPY waytasks FROM '/init/waytasks.csv' DELIMITER ',' CSV HEADER;
 EOSQL
