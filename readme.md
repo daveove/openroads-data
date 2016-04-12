@@ -44,4 +44,4 @@ Open the style and go to Layers -> Change source. Append the Mapbox ID.
 3. Upload the style back to Mapbox
 
 ## Openroads Database
-This repo also contains the Openroads Database Schema. [Documentation](https://github.com/opengovt/openroads-data/blob/master/db/README.md#openroads-db)
+This repo also contains the Openroads Database Schema. [Documentation](db/README.md#openroads-db)
