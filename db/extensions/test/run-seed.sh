@@ -11,4 +11,5 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
   COPY admin_boundaries FROM '/init/admin_boundaries.csv' DELIMITER ',' CSV HEADER;
   COPY admin_stats FROM '/init/admin_stats.csv' DELIMITER ',' CSV HEADER;
   COPY waytasks FROM '/init/waytasks.csv' DELIMITER ',' CSV HEADER;
+  COPY projects FROM '/init/projects.csv' DELIMITER ',' CSV HEADER;
 EOSQL
