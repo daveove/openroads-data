@@ -18,30 +18,8 @@ Other notes:
 - unless stated otherwise, the data will be attributed to the OSM user `openroads`
 - the data should be imported using negative id's. OGR2OSM takes care of this by default.
 
-### Basic road network
-
-- name
-- or_responsibility
-- or_condition
-- surface
-
-### Project roads
-OpenRoads contains data about the basic Philippine road network, but also data about project roads such as FMR and TRIP. These are imported as ways into the OR database and then manually converted to relations.
-
 ## Administrative areas
 The administrative areas are stored in its own repository: [OpenRoads Boundaries](https://github.com/opengovt/openroads-boundaries).
-
-## Generating the baselayer
-Until the automatic generation of the baselayer is implemented, we are manually rendering it using Mapbox Studio.
-
-The basic styles are defined in the 'OR - Roads baselayer' project (`openroads.cc286209`). New road data that's delivered has to be uploaded as a data source and then added as a layer to the style.
-
-1. Upload the data as a data source to Mapbox.  
-Make sure the layer is called 'roads' and the road network itself is classified with the `or_responsibility` attribute, with one of the following values: national, provincial, municipal, barangay, private.  
-Upload the data source to Mapbox.
-2. Add the new data source as an extra layer to the style.  
-Open the style and go to Layers -> Change source. Append the Mapbox ID.
-3. Upload the style back to Mapbox
 
 ## Openroads Database
 This repo also contains the [Openroads Database Schema](db), with a Docker setup for local testing.
